@@ -12,6 +12,9 @@ const ItemFilters = ({ items, onFilterChange }: { items: any[], onFilterChange: 
   const handleChangeKey = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const key = event.target.value;
     setSelectedKey(key);
+    setSelectedValue('');
+
+    onFilterChange(key, selectedValue);
   };
 
   useEffect(() => {
@@ -20,6 +23,8 @@ const ItemFilters = ({ items, onFilterChange }: { items: any[], onFilterChange: 
         .filter((value, index, self) => value && self.indexOf(value) === index);
     
       setValues(values);
+    } else {
+      setValues([]);
     }
   }, [selectedKey, items]);
 
