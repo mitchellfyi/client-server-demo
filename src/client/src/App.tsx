@@ -18,6 +18,7 @@ function App() {
 
 
   const handleFilterChange = (key: string, value: string) => {
+    console.log(key, value)
     setFilter({ filterKey: key, filterValue: value});
   };
 

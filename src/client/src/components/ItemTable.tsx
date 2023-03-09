@@ -8,7 +8,7 @@ const ItemTable = ({ items }: { items: any[] }) => {
       <thead>
         <tr>
           {keys.map((key) => (
-          <th>{key}</th>
+          <th key={key}>{key}</th>
            ))}
         </tr>
       </thead>

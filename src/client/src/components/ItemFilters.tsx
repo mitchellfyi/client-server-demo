@@ -14,7 +14,7 @@ const ItemFilters = ({ items, onFilterChange }: { items: any[], onFilterChange: 
     setSelectedKey(key);
     setSelectedValue('');
 
-    onFilterChange(key, selectedValue);
+    onFilterChange(key, '');
   };
 
   useEffect(() => {
