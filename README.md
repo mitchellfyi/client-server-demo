@@ -1,4 +1,7 @@
 # A Client / Server Demo wrote in TypeScript
+
+[Watch a video](https://youtu.be/y3wjDTr7gsc)
+
 ## Using Node.js (Express) and React.
 
 Run both server and client locally:
