@@ -1,9 +1,8 @@
 import express, { Request, Response } from 'express';
+import influencersRouter from './services/influencers/routes';
 
 const app = express();
 
-app.use('/', (req: Request, resp: Response) => {
-  console.log('Hello from Express!');
-});
+app.use('/api/v1/influencers', influencersRouter);
 
 export default app;
