@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "ts-node-dev --respawn --pretty --transpile-only ./src/server.ts",
+    "server": "yarn && PORT=3001 ts-node-dev --respawn --pretty --transpile-only ./src/server.ts",
+    "client": "yarn && yarn --cwd ./src/client start",
+    "dev": "concurrently --kill-others \"yarn server\" \"yarn client\"",
     "test": "jest"
   },
   "author": "",
@@ -15,6 +17,7 @@
     "@types/jest": "^29.4.0",
     "@types/node": "^18.14.6",
     "@types/supertest": "^2.0.12",
+    "concurrently": "^7.6.0",
     "jest": "^29.5.0",
     "supertest": "^6.3.3",
     "ts-jest": "^29.0.5",
