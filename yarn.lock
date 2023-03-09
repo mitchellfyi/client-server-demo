@@ -680,6 +680,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/human-format@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/human-format/-/human-format-1.0.0.tgz#b77d8ef5d9638d066c132ec58628d4a9a6163cef"
+  integrity sha512-EpU2OnpDx0b7F93KuhUnsFyLL60h+PWjXsc6QWNU0gHsSqy6Up+7YRqzMHWVcCYjNbaXqYr2g5vpNwOXyUap+A==
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.4"
   resolved "https://registry.npmjs.org/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.4.tgz"
@@ -1591,6 +1596,11 @@ http-errors@2.0.0:
     setprototypeof "1.2.0"
     statuses "2.0.1"
     toidentifier "1.0.1"
+
+human-format@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/human-format/-/human-format-1.0.0.tgz#bb5ecc618062581f0442769529c553367507e8fe"
+  integrity sha512-ZfSxF/LHVDb5Un52AguYkZArbiuMbJQwpOpZ0MBuj3pYDmLt7pkCEws9L8xKbgnaKrfMgGd6qc+PHBbKO97AaA==
 
 human-signals@^2.1.0:
   version "2.1.0"
