@@ -3,7 +3,7 @@ import * as controller from "./controller";
 
 const router = express.Router();
 
-router.get("/", async (req: Request, res: Response) => {
+export const index = async (req: Request, res: Response) => {
   try {
     const items = await await controller.findAll();
 
@@ -11,6 +11,8 @@ router.get("/", async (req: Request, res: Response) => {
   } catch (e: any) {
     res.status(500).send(e.message);
   }
-});
+};
+
+router.get("/", index);
 
 export default router;
