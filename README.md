@@ -1,4 +1,4 @@
-# A Client / Server Demo wrote in TypeScript
+# A Client / Server Demo with TypeScript
 
 [Watch a video](https://youtu.be/y3wjDTr7gsc)
 
